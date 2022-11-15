@@ -1,1 +1,1 @@
-# Samsung-Smartphone-UI
+# Samsung Smartphone UI
