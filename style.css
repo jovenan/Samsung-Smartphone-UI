@@ -1,0 +1,87 @@
+:root {
+    --radial-color: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(70,71,71,1) 93%, rgba(145,148,147,1) 100%);
+    --radial-color-borders: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(70,71,71,1) 0%, rgba(16,27,17,1) 100%);
+    --screen-color: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(12,21,13,1) 41%, rgba(51,51,51,1) 100%);
+    --button-color: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(70,71,71,1) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.disable {
+    opacity: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    width: 360px;
+    height: 740px;
+    background: var(--radial-color);
+    border-radius: 30px;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.borders {
+    background: var(--radial-color-borders);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.screen {
+    position: relative;
+    border-radius: 30px;
+    background: var(--screen-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    border-radius: 30px;
+    opacity: 1;
+    transition: opacity .4s;
+}
+
+.camera {
+    position: absolute;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    top: 2%;
+    z-index: 999;
+}
+
+.volume {
+    height: 100px;
+    width: 4px;
+    background: var(--button-color);
+    position: absolute;
+    top: 100px;
+    right: -4px;
+}
+
+.on {
+    height: 60px;
+    width: 4px;
+    background: var(--button-color);
+    position: absolute;
+    top: 215px;
+    right: -4px;
+}

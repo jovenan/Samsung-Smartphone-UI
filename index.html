@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Smartphone UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="phone">
+            <div class="borders">
+                <div class="screen">
+                    <div class="camera"></div>
+                    <img class="disable" src="img/screen.jpg" alt="screen">
+                </div>
+            </div>
+            <div class="volume"></div>
+            <div class="on"></div>
+        </div>
+    </main>
+    <script>
+        const imgScreen = document.querySelector("img");
+
+        imgScreen.addEventListener("click", (e) => {
+            if(imgScreen.classList.length) {
+                imgScreen.classList.remove("disable");
+            } else {
+                imgScreen.classList.add("disable");
+            }
+        })
+    </script>
+</body>
+</html>
